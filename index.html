@@ -1,47 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de ventilador</title>
+
+    <title>Ventilador</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <h1>Sistema de Ventilador</h1>
 
-<div class="container">
-    
-    <div id="ventilador" class="ventilador">
-        
-        <div id="grade" class="grade">
-                
-            <div id="helices" class="helices">
-                
-                <div id="centro" class="centro"></div>
-                
-                <div id="helice" class="helice"></div>
-                        
-                <div id="helice" class="helice"></div>
-                        
-                <div id="helice" class="helice"></div>
+<body>
+
+    <div class="container">
+
+        <h1>Ventilador</h1>
+
+        <div id="ventilador">
+
+            <div class="helices">
+
+                <div class="helice"></div>
+                <div class="helice"></div>
+                <div class="helice"></div>
+
+                <div class="centro"></div>
 
             </div>
+
         </div>
-            
+
+        <h2 id="status">Desligado</h2>
+
+        <button id="botao">
+            Ligar
+        </button>
+
+        <div class="velocidades">
+
+            <button class="velocidade" data-velocidade="1">
+                1
+            </button>
+
+            <button class="velocidade" data-velocidade="2">
+                2
+            </button>
+
+            <button class="velocidade" data-velocidade="3">
+                3
+            </button>
+
+        </div>
+
     </div>
 
-        <button id="botao">Ligar</button>
-        <br><br>
-        <button id="vl1">Velocidade 1</button>
-       <br>
-        <button id="vl2">Velocidade 2</button>
-        <br>
-        <button id="vl3">Velocidade 3</button>
-
-</div>
-
     <script src="script.js"></script>
+
 </body>
+
 </html>
